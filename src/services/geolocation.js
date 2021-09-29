@@ -1,6 +1,6 @@
 import { PermissionsAndroid } from "react-native"
 
-const checkPermission = async () => {
+const checkGeolocationPermission = async () => {
     try {
         const permission = await PermissionsAndroid.request(
             PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
@@ -23,4 +23,4 @@ const checkPermission = async () => {
 }
 
 
-export { checkPermission, };
+export { checkGeolocationPermission, };
